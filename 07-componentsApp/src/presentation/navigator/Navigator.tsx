@@ -1,6 +1,7 @@
 import { createStackNavigator } from '@react-navigation/stack';
 import { HomeScreen } from '../screens/home/HomeScreen';
 import { AlertScreen } from '../screens/alerts/AlertScreen';
+import { Animation101Screen } from '../screens/animations/Animation101Screen';
 
 const Stack = createStackNavigator();
 
@@ -10,7 +11,7 @@ export const Navigator = () => {
         headerShown: false,
     }}>
       <Stack.Screen name="HomeScreen" component={HomeScreen} />
-      <Stack.Screen name="Alerts" component={AlertScreen} />
+      <Stack.Screen name="Animation101Screen" component={Animation101Screen} />
       {/* <Stack.Screen name="Profile" component={Profile} /> */}
       {/* <Stack.Screen name="Settings" component={Settings} /> */}
     </Stack.Navigator>
